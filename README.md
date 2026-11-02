@@ -1,4 +1,4 @@
-# Skyworth SWTV-22SA-FHD Debloat and Custom Launcher
+# Debloat and Custom Launcher
 
 > **Launcher v11.0 (November 2, 2026)**: **Now Showing** hero — rotating TMDB "Trending Today" backdrops replace the home wallpaper, with title, rating, synopsis and a **Watch Now** button (opens the matching installed streaming app → Stremio → YouTube trailer). Toggle it off in Control Center to return to the static wallpaper.
 >
