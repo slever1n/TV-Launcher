@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Apple / iOS Style Clean Crescent Moon for Sleep Timer -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,3c-4.97,0 -9,4.03 -9,9s4.03,9 9,9c3.92,0 7.28,-2.51 8.52,-6.06c-0.66,0.17 -1.35,0.26 -2.06,0.26c-4.69,0 -8.5,-3.81 -8.5,-8.5c0,-1.45 0.37,-2.81 1.01,-4c-0.32,-0.05 -0.64,-0.08 -0.97,-0.08z" />
+</vector>

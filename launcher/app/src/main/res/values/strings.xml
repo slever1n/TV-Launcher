@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TV Launcher</string>
+    <string name="greeting_morning">Good Morning, A Team</string>
+    <string name="greeting_afternoon">Good Afternoon, A Team</string>
+    <string name="greeting_evening">Good Evening, A Team</string>
+    <string name="dock_hint">↓  All apps     ·     Hold OK to edit your dock</string>
+    <string name="drawer_hint">↑ from the first row or Back to return to your dock</string>
+    <string name="now_playing">NOW PLAYING</string>
+    <string name="playing_app">NOW PLAYING  ·  %1$s</string>
+    <string name="paused_app">PAUSED  ·  %1$s</string>
+    <string name="open_shortcut">Open %1$s</string>
+    <string name="app_hint">OK to open %1$s  ·  Hold OK for options</string>
+    <string name="standby_admin_description">Lets the launcher turn the TV off (standby) after the lock screen timeout or sleep timer. No other device controls are used.</string>
+</resources>
