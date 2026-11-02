@@ -1,4 +1,4 @@
-# TV Launcher ???
+# TV Launcher 📺✨
 
 > A minimalist, fluid, Apple TV / tvOS-inspired launcher designed for Android TV and Google TV devices. Built from the ground up in pure Java with zero third-party runtime dependencies, optimized specifically for smooth performance on resource-constrained TV hardware.
 
@@ -8,10 +8,12 @@
 
 ---
 
-## ?? Showcase
+## 📸 Showcase
 
-### Home Screen
-![Home Screen](docs/screenshots/home.png)
+### Home Screen & Now Showing Hero (TMDB Trending)
+| Clean Home Screen (Static Wallpaper) | Now Showing Hero (Dynamic TMDB Backdrop & Watch Now) |
+| :---: | :---: |
+| ![Home Screen](docs/screenshots/home.png) | ![Now Showing Hero](docs/screenshots/now_showing.png) |
 
 ### Control Center & Lock Screen
 | Apple TV Liquid Glass Control Center | glassOS Centered Lock Screen |
@@ -25,39 +27,39 @@
 
 ---
 
-## ? Key Features
+## ✨ Key Features
 
-- **?? tvOS Liquid Glass Control Center**:
-  - Translucent frosted glass panel with real-time dynamic background blur powered by an optimized $O(N)$ StackBlur algorithm (`FastBlur.java`).
+- **🎬 Now Showing (TMDB Trending Hero)**:
+  - Dynamic crossfading TMDB "Trending Today" backdrops replacing the static wallpaper behind the home UI.
+  - Displays title, IMDb/TMDB rating, release year, overview synopsis, and a smart **Watch Now** button.
+  - **Smart Routing**: Launches installed streaming apps (Netflix, Disney+, Apple TV+, Prime Video, Max) matching TMDB watch providers → Stremio details page via IMDb ID → YouTube trailer.
+  - Built-in performance safeguards: RGB_565 decoding, disk caching, and rotation pauses whenever the screen is not active.
+
+- **🍎 tvOS Liquid Glass Control Center**:
+  - Translucent frosted glass panel with real-time dynamic background blur powered by an optimized O(N) StackBlur algorithm (`FastBlur.java`).
   - Slide-down / slide-up entrance animation triggered from the circular top-right header button.
   - Quick-access tiles: **Lock Screen timeout**, **Sleep Timer**, **Standby mode**, **Input switcher (HDMI 1, 2, AV, Tuner)**, and **One-tap Memory Cleaner**.
 
-- **?? Now Showing (TMDB Trending Hero)**:
-  - Crossfading TMDB "Trending Today" backdrops directly behind the home UI.
-  - Displays title, IMDb/TMDB rating, release year, overview synopsis, and a smart **Watch Now** button.
-  - **Smart Routing**: Launches installed streaming apps (Netflix, Disney+, Apple TV+, Prime Video, Max) matching TMDB watch providers $\rightarrow$ Stremio details page $\rightarrow$ YouTube trailer.
-  - Built-in performance safeguards: RGB_565 decoding, disk caching, and rotation pauses whenever the screen is not active.
-
-- **?? glassOS Centered Lock Screen**:
+- **🔒 glassOS Centered Lock Screen**:
   - Mathematically centered tabular clock and date layout with subtle Ken Burns background motion.
   - Fully customizable quick-launch dock with favorite apps.
   - Long-press any dock tile to enter edit mode: Move Left/Right, Replace with Another App, or Add New Apps from a 4-column visual icon grid.
 
-- **??? Wallpaper Manager & Local Wi-Fi Upload Server**:
+- **🖼️ Wallpaper Manager & Local Wi-Fi Upload Server**:
   - 12 built-in high-resolution wallpapers.
   - Built-in lightweight HTTP server on port `7070` (`http://<tv-ip>:7070`): upload custom wallpapers directly from any phone, tablet, or PC browser without needing flash drives or file managers.
 
-- **??? Live Weather & Sleep Badges**:
+- **🌤️ Live Weather & Sleep Badges**:
   - Live weather pill in the header displaying current temperature and weather conditions (via IP geolocation and Open-Meteo, cached with 2-hour TTL).
-  - Sleep timer countdown badge (e.g., `?? 29m`) in the header with one-click cancellation.
+  - Sleep timer countdown badge (e.g., `🌙 29m`) in the header with one-click cancellation.
 
-- **? Lightweight & Pure Native**:
+- **⚡ Lightweight & Pure Native**:
   - Zero heavy third-party UI or reactive libraries.
   - Low memory footprint (~40 MB RAM) ensures 60 FPS fluidity on budget smart TVs.
 
 ---
 
-## ?? Installation & Setup
+## 🚀 Installation & Setup
 
 ### Prerequisites
 - **Computer** with Windows, macOS, or Linux.
@@ -120,9 +122,9 @@ launcher/app/build/outputs/apk/debug/app-debug.apk
 ### Step 4: Install onto Your Android TV
 
 1. **Enable Developer Options & Network Debugging on your TV**:
-   - Go to **Settings** $\rightarrow$ **Device Preferences** $\rightarrow$ **About**.
+   - Go to **Settings** → **Device Preferences** → **About**.
    - Click **Build** 7 times until Developer Mode is unlocked.
-   - Go to **Settings** $\rightarrow$ **Developer Options** and enable **Network Debugging** (ADB over Wi-Fi).
+   - Go to **Settings** → **Developer Options** and enable **Network Debugging** (ADB over Wi-Fi).
 
 2. **Connect via ADB**:
    ```bash
@@ -138,7 +140,7 @@ launcher/app/build/outputs/apk/debug/app-debug.apk
 ---
 
 ### Step 5: Set as Default Launcher
-Press the **Home** button on your remote control and select **TV Launcher** $\rightarrow$ **Always**.
+Press the **Home** button on your remote control and select **TV Launcher** → **Always**.
 
 *(Optional)* If your stock launcher does not show the prompt to switch default launchers, you can disable the stock Google TV launcher via ADB:
 ```bash
@@ -154,13 +156,13 @@ For a complete guide on safely debloating stock OEM background services, telemet
 
 ---
 
-## ?? Navigation & Remote Controls
+## 🎮 Navigation & Remote Controls
 
 | Screen | Action | Remote Key / D-Pad |
 | :--- | :--- | :--- |
 | **Home Screen** | Open All Apps Drawer | Press `Down` from dock |
 | **Home Screen** | Jump to Header Controls | Press `Up` from dock |
-| **Home Screen** | Open Control Center | Focus Control Center button $\rightarrow$ Press `OK` |
+| **Home Screen** | Open Control Center | Focus Control Center button → Press `OK` |
 | **Dock** | Reorder or Replace App | Long-press `OK` on any dock app icon |
 | **Hero (Now Showing)** | Focus Watch Now pill | Press `Down` from Header or `Up` from Dock |
 | **Hero (Now Showing)** | Browse Trending Slides | Press `Left` / `Right` on Watch Now pill |
@@ -169,13 +171,13 @@ For a complete guide on safely debloating stock OEM background services, telemet
 
 ---
 
-## ??? Companion Documentation
+## 🛠️ Companion Documentation
 
-- [DEBLOAT.md](DEBLOAT.md) � Comprehensive list of safe-to-disable manufacturer packages, telemetry removal steps, and restore scripts for Android 14 TVs.
+- [DEBLOAT.md](DEBLOAT.md) — Comprehensive list of safe-to-disable manufacturer packages, telemetry removal steps, and restore scripts for Android 14 TVs.
 
 ---
 
-## ?? License & Attribution
+## 📄 License & Attribution
 
 - Released under the [Apache License 2.0](LICENSE).
 - This product uses the TMDB API but is not endorsed or certified by TMDB.
